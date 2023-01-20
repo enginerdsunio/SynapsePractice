@@ -1,0 +1,58 @@
+{
+	"name": "Json2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "raw",
+				"container": "company-abc"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"page": {
+					"type": "integer"
+				},
+				"per_page": {
+					"type": "integer"
+				},
+				"totalrecord": {
+					"type": "integer"
+				},
+				"total_pages": {
+					"type": "integer"
+				},
+				"data": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"id": {
+								"type": "integer"
+							},
+							"tourist_name": {
+								"type": "string"
+							},
+							"tourist_email": {
+								"type": "string"
+							},
+							"tourist_location": {
+								"type": "string"
+							},
+							"createdat": {
+								"type": "string"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"name": "KQL script 1",
+	"properties": {
+		"content": {
+			"query": "sdd",
+			"metadata": {
+				"language": "kql"
+			}
+		},
+		"type": "KqlQuery"
+	}
+}

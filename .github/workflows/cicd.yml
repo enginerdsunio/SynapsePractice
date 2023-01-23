@@ -17,11 +17,11 @@ jobs:
       - name: Deploy workspace to synapse
         uses: Azure/Synapse-workspace-deployment@V1.7.0
         with:
-          TargetWorkspaceName: 'practice-rnd-synapse'
+          TargetWorkspaceName: 'practicernd-synapse-uat'
           TemplateFile: './practice-rnd-synapse/TemplateForWorkspace.json'
           ParametersFile: './practice-rnd-synapse/TemplateParametersForWorkspace.json'
           environment: 'Azure Public'
-          resourceGroup: 'pratice-rnd-uat'
+          resourceGroupName: 'pratice-rnd-uat'
           clientId: ${{ secrets.CLIENTID }}
           clientSecret: ${{ secrets.CLIENTSECRET }}
           subscriptionId: ${{ secrets.SUBID }}

@@ -8,9 +8,8 @@ jobs:
     name: Deploy to UAT Synapse WS
     runs-on: ubuntu-latest
     steps:
-      uses: actions/checkout@v2
-      uses: Azure/Synapse-workspace-deployment@V1.7.0
-      with:
+        uses: Azure/Synapse-workspace-deployment@V1.7.0
+        with:
           TargetWorkspaceName: 'practicernd-synapse-uat'
           TemplateFile: './practice-rnd-synapse/TemplateForWorkspace.json'
           ParametersFile: './practice-rnd-synapse/TemplateParametersForWorkspace.json'

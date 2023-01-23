@@ -1,6 +1,7 @@
 name: Synapse workspace deployment
 on:
-  workflow_dispatch
+  push:
+    branches: workspace_publish
   
 jobs:
   deploy_uat:

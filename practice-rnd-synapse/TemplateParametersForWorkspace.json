@@ -3,7 +3,7 @@
 	"contentVersion": "1.0.0.0",
 	"parameters": {
 		"workspaceName": {
-			"value": "practice-rnd-synapse"
+			"value": "practicernd-synapse-uat"
 		},
 		"AzureBlobStorage1_connectionString": {
 			"value": ""

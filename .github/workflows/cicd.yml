@@ -8,6 +8,12 @@ jobs:
     name: Deploy to UAT Synapse WS
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout workspace_publish
+        uses: actions/checkout@v2
+        with:
+          ref: workspace_publish
+        
+      - name: Deploy workspace to synapse
         uses: Azure/Synapse-workspace-deployment@V1.7.0
         with:
           TargetWorkspaceName: 'practicernd-synapse-uat'

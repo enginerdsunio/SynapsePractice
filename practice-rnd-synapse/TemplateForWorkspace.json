@@ -5,7 +5,7 @@
 		"workspaceName": {
 			"type": "string",
 			"metadata": "Workspace name",
-			"defaultValue": "practice-rnd-synapse"
+			"defaultValue": "practicernd-synapse-uat"
 		},
 		"AzureBlobStorage1_connectionString": {
 			"type": "secureString",

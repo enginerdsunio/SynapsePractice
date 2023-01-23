@@ -20,8 +20,8 @@ jobs:
           TargetWorkspaceName: 'practicernd-synapse-uat'
           TemplateFile: './practice-rnd-synapse/TemplateForWorkspace.json'
           ParametersFile: './practice-rnd-synapse/TemplateParametersForWorkspace.json'
-          environment: 'Azure Public'
-          resourceGroupName: 'pratice-rnd-uat'
+          Environment: 'Azure Public'
+          resourceGroup: 'pratice-rnd-uat'
           clientId: ${{ secrets.CLIENTID }}
           clientSecret: ${{ secrets.CLIENTSECRET }}
           subscriptionId: ${{ secrets.SUBID }}
